@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ToastContainer, StyledToast, ToastCloseButton } from './Toast.styles';
-import { Toast } from './Toast.types';
+import { ToastData } from './Toast.types';
 
 interface ToastContainerProps {
-  toasts: Toast[];
+  toasts: ToastData[];
   onRemove: (id: string) => void;
 }
 
@@ -18,7 +18,7 @@ export const ToastList: React.FC<ToastContainerProps> = ({ toasts, onRemove }) =
 };
 
 interface ToastItemProps {
-  toast: Toast;
+  toast: ToastData;
   onClose: () => void;
 }
 

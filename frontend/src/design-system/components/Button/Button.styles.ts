@@ -9,6 +9,7 @@ import { buttonSizes } from './Button.sizes';
 import { radius } from '../../tokens/radius/base';
 import { spacing } from '../../tokens/spacing/scales';
 import { animation } from '../../tokens/animation';
+import { colors } from '../../tokens/colors';
 
 export const StyledButton = styled.button<ButtonProps>`
   display: inline-flex;
@@ -36,7 +37,7 @@ export const StyledButton = styled.button<ButtonProps>`
   `}
   
   &:focus-visible {
-    outline: 2px solid ${({ theme }) => theme.colors.primary.accent.primary};
+    outline: 2px solid ${colors.primary.accent.primary};
     outline-offset: 2px;
   }
 `;

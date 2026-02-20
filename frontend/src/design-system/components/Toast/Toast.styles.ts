@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { ToastProps } from './Toast.types';
+import { ToastVariant } from './Toast.types';
 import { colors } from '../../tokens/colors';
 import { shadows } from '../../tokens/shadows';
 import { radius } from '../../tokens/radius/base';
@@ -46,7 +46,7 @@ export const ToastContainer = styled.div`
   gap: ${spacing[2]};
 `;
 
-export const StyledToast = styled.div<ToastProps>`
+export const StyledToast = styled.div<{ variant?: ToastVariant; className?: string }>`
   background: ${colors.neutral.surface.light};
   border-left: 4px solid ${({ variant = 'info' }) => variantColors[variant]};
   border-radius: ${radius.lg};

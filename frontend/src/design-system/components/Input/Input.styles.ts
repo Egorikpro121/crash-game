@@ -66,7 +66,7 @@ export const InputHelper = styled.span`
   color: ${colors.neutral.text.tertiary};
 `;
 
-export const InputContainer = styled.div`
+export const InputContainer = styled.div<{ $hasLeftIcon?: boolean; $hasRightIcon?: boolean }>`
   position: relative;
   display: flex;
   align-items: center;
@@ -78,9 +78,7 @@ export const InputContainer = styled.div`
   }
   
   input {
-    padding-left: ${({ hasLeftIcon }: { hasLeftIcon?: boolean }) => 
-      hasLeftIcon ? spacing[12] : spacing[4]};
-    padding-right: ${({ hasRightIcon }: { hasRightIcon?: boolean }) => 
-      hasRightIcon ? spacing[12] : spacing[4]};
+    padding-left: ${({ $hasLeftIcon }) => ($hasLeftIcon ? spacing[12] : spacing[4])};
+    padding-right: ${({ $hasRightIcon }) => ($hasRightIcon ? spacing[12] : spacing[4])};
   }
 `;

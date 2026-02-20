@@ -25,7 +25,7 @@ export const Input: React.FC<InputProps> = ({
   return (
     <InputWrapper fullWidth={fullWidth}>
       {label && <InputLabel>{label}</InputLabel>}
-      <InputContainer hasLeftIcon={!!leftIcon} hasRightIcon={!!rightIcon}>
+      <InputContainer $hasLeftIcon={!!leftIcon} $hasRightIcon={!!rightIcon}>
         {leftIcon && <span>{leftIcon}</span>}
         <StyledInput error={error} {...props} />
         {rightIcon && <span>{rightIcon}</span>}
