@@ -1,0 +1,14 @@
+security:
+  encryption:
+    algorithm: "fernet"
+    key_derivation_iterations: 100000
+  jwt:
+    algorithm: "HS256"
+    expiration_days: 30
+  anti_fraud:
+    max_bets_per_minute: 10
+    max_win_rate: 0.95
+    suspicion_threshold: 50
+  rate_limiting:
+    requests_per_minute: 60
+    requests_per_hour: 1000

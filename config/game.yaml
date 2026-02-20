@@ -1,0 +1,15 @@
+game:
+  house_edge: 0.01  # 1%
+  crash_probabilities:
+    before_2x: 0.30
+    2x_to_5x: 0.50
+    above_5x: 0.20
+  bet_limits:
+    min_ton: 0.01
+    max_ton: 100.0
+    min_stars: 1.0
+    max_stars: 10000.0
+  round_settings:
+    countdown_seconds: 5
+    min_duration_ms: 1000
+    max_duration_ms: 60000

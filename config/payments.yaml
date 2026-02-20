@@ -1,0 +1,11 @@
+payments:
+  ton:
+    api_url: "https://tonapi.io"
+    min_amount: 0.1
+    max_amount: 10000.0
+  stars:
+    min_amount: 10.0
+    max_amount: 1000000.0
+  fees:
+    withdrawal_ton_percent: 0.01
+    withdrawal_stars_percent: 0.01

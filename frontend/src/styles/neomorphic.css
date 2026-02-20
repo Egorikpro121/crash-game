@@ -1,0 +1,30 @@
+/**
+ * Global neomorphic styles
+ */
+
+.neomorphic {
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: 6px 6px 12px var(--shadow-dark-soft), -6px -6px 12px var(--shadow-light-soft);
+  transition: box-shadow var(--duration-normal) var(--easing-default);
+}
+
+.neomorphic:hover {
+  box-shadow: 8px 8px 16px var(--shadow-dark-soft), -8px -8px 16px var(--shadow-light-soft);
+}
+
+.neomorphic:active {
+  box-shadow: inset 4px 4px 8px var(--shadow-dark-soft), inset -4px -4px 8px var(--shadow-light-soft);
+}
+
+.neomorphic-pressed {
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: inset 4px 4px 8px var(--shadow-dark-soft), inset -4px -4px 8px var(--shadow-light-soft);
+}
+
+.neomorphic-flat {
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: 2px 2px 4px var(--shadow-dark-soft), -2px -2px 4px var(--shadow-light-soft);
+}

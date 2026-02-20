@@ -1,0 +1,25 @@
+economics:
+  commissions:
+    withdrawal_percent: 0.01  # 1%
+    withdrawal_min_ton: 0.1
+    withdrawal_min_stars: 10
+    deposit_percent: 0.0  # 0%
+  bonuses:
+    first_deposit_percent: 0.10  # 10%
+    daily_ton: 0.01
+    daily_stars: 1.0
+  referrals:
+    commission_percent: 0.05  # 5%
+  limits:
+    bet_min_ton: 0.01
+    bet_max_ton: 100.0
+    bet_min_stars: 1.0
+    bet_max_stars: 10000.0
+    withdrawal_min_ton: 0.1
+    withdrawal_max_ton: 1000.0
+    withdrawal_min_stars: 10.0
+    withdrawal_max_stars: 100000.0
+    deposit_min_ton: 0.1
+    deposit_max_ton: 10000.0
+    deposit_min_stars: 10.0
+    deposit_max_stars: 1000000.0
