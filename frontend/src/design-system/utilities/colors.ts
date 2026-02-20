@@ -28,13 +28,13 @@ export const colorUtils = {
   },
   
   // Lighten color
-  lighten: (color: string, percent: number): string => {
+  lighten: (color: string): string => {
     // Simplified - in production would use color manipulation library
     return color;
   },
   
   // Darken color
-  darken: (color: string, percent: number): string => {
+  darken: (color: string): string => {
     // Simplified - in production would use color manipulation library
     return color;
   },

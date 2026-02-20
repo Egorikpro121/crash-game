@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card } from '../../design-system/components/Card';
-import { Avatar } from '../../design-system/components/Avatar';
 import styled from 'styled-components';
 import { spacing } from '../../design-system/tokens/spacing/scales';
 

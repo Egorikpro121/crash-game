@@ -15,7 +15,7 @@ export const Admin: React.FC = () => {
     <AdminContainer>
       <h1>Admin Panel</h1>
       <Card>
-        {/* Admin content */}
+        <p>Admin content will be here</p>
       </Card>
     </AdminContainer>
   );

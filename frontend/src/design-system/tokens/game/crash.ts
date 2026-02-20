@@ -3,7 +3,6 @@
  */
 
 import { gameColors } from '../colors/game';
-import { shadows } from '../shadows';
 
 export const crashTokens = {
   colors: {

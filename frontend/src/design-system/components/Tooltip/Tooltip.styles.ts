@@ -43,7 +43,7 @@ export const TooltipWrapper = styled.div`
 export const TooltipContent = styled.div<{ position: TooltipPosition; visible: boolean }>`
   position: absolute;
   ${({ position }) => positionMap[position]}
-  background: ${colors.neutral.surface.elevated};
+  background: ${colors.neutral.background.elevated};
   color: ${colors.neutral.text.primary};
   padding: ${spacing[2]} ${spacing[3]};
   border-radius: ${radius.base};
