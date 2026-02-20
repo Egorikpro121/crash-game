@@ -17,7 +17,7 @@ export const useAnimation = (
 ) => {
   const { duration = 300, delay = 0, onComplete } = options;
   const [isAnimating, setIsAnimating] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   useEffect(() => {
     if (isActive) {
