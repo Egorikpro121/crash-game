@@ -1,0 +1,16 @@
+{
+  "build": {
+    "command": "cd frontend && npm install && npm run build",
+    "cwd": "frontend",
+    "watch": []
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
